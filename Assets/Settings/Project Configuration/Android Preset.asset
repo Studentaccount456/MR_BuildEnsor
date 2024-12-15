@@ -1,5 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6909218196542793264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d6299140b49b2641ba8c7ef39a5f1d2, type: 3}
+  m_Name: ApplyShaderRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  shader: {fileID: 4800000, guid: 49845ee79021e8743ab768591030e7ff, type: 3}
+  material: {fileID: 0}
 --- !u!114 &-1303257217304917293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26,7 +41,7 @@ MonoBehaviour:
     overrideMaterialPassIndex: 0
     overrideShader: {fileID: 4800000, guid: 3ac248fb07ecf8c4a8091c723d9ec046, type: 3}
     overrideShaderPassIndex: 0
-    overrideMode: 2
+    overrideMode: 0
     overrideDepthState: 0
     depthCompareFunction: 4
     enableWrite: 1
