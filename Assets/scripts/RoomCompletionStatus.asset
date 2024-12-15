@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 081448c8747fb914e8075d663473f09e, type: 3}
   m_Name: RoomCompletionStatus
   m_EditorClassIdentifier: 
-  room1Completed: 1
-  room2Completed: 1
+  room1Completed: 0
+  room2Completed: 0
   room3Completed: 1
-  room4Completed: 1
+  room4Completed: 0

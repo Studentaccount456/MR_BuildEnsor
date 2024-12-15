@@ -7,4 +7,12 @@ public class RoomCompletionStatus : ScriptableObject
     public bool room2Completed;
     public bool room3Completed;
     public bool room4Completed;
+
+    private void OnEnable()
+    {
+        room1Completed = false;
+        room2Completed = false;
+        room3Completed = false;
+        room4Completed = false;
+    }
 }
