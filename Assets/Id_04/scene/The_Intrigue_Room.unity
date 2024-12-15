@@ -6748,6 +6748,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Main scene
   targetObject: {fileID: 479011249}
+  roomStatus: {fileID: 11400000, guid: 70b0d24b165caa14aa631d6ef2be724e, type: 2}
+  roomNumber: 4
 --- !u!4 &404873042
 Transform:
   m_ObjectHideFlags: 0

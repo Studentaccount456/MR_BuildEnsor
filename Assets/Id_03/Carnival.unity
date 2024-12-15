@@ -237,7 +237,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -426,7 +426,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 4.44
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -478,12 +478,12 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 1
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.003921569, g: 0.84705883, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 1}
+        key0: {r: 0.003921569, g: 0.84705883, b: 1, a: 1}
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
@@ -508,7 +508,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_ColorSpace: -1
+        m_ColorSpace: 0
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -927,7 +927,7 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: -52.988853, y: 9.9697, z: 10.79264}
+    m_Position: {x: -52.988853, y: 15.143759, z: 10.523203}
     m_Rotation: {x: 272.9811, y: 180, z: 180}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
@@ -5155,8 +5155,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10, y: 60, z: 28.659775}
-  m_Center: {x: -32.277153, y: 0, z: 10.142557}
+  m_Size: {x: 15.503895, y: 59.999996, z: 28.659773}
+  m_Center: {x: -53.018826, y: 0, z: 10.142556}
 --- !u!54 &28527785
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5672,6 +5672,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Main scene
   targetObject: {fileID: 28527783}
+  roomStatus: {fileID: 11400000, guid: 70b0d24b165caa14aa631d6ef2be724e, type: 2}
+  roomNumber: 3
 --- !u!4 &373100292
 Transform:
   m_ObjectHideFlags: 0

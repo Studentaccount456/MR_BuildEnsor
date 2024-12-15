@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 55daccc09a3b69647bbab145b54a3ab3
+    path: Assets/Id_05/Main scene.unity
+    guid: c3a743ccd5f0b824fa597c2cbdb344f0
+  - enabled: 1
+    path: Assets/Id_04/scene/The_Intrigue_Room.unity
+    guid: bfe293b1da04e0649b2b56b25d4c67ce
+  - enabled: 1
+    path: Assets/Id_03/Carnival.unity
+    guid: f763e6b7cb50d414695fc1504246e112
+  - enabled: 1
+    path: Assets/Id_02/emirhanScene.unity
+    guid: 3a6fbe34fabbd5747a4b74e564c53830
+  - enabled: 1
+    path: Assets/Id_01/ManOfSorrows.unity
+    guid: 6d71dabb26edeb94f8a68997940b5985
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
@@ -16,3 +28,4 @@ EditorBuildSettings:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 985fdffee33a5944396199c6b7145dd4, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1a4c68ca72a83449f938d669337cb305, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: a9a6963505ddf7f4d886008c6dc86122, type: 2}
+  m_UseUCBPForAssetBundles: 0
