@@ -7238,25 +7238,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0b0379a2d14e9f9498a684f0344a1f43, type: 3}
   m_PrefabInstance: {fileID: 500317276}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1476487538 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
-  m_PrefabInstance: {fileID: 1961219161}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1476487541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1476487538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
 --- !u!1 &1484537891
 GameObject:
   m_ObjectHideFlags: 0
@@ -8069,7 +8050,6 @@ SceneRoots:
   - {fileID: 959435338}
   - {fileID: 330140992}
   - {fileID: 576592384}
-  - {fileID: 1961219161}
   - {fileID: 988464035}
   - {fileID: 28527779}
   - {fileID: 373100292}
