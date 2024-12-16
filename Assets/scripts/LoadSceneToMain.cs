@@ -12,6 +12,9 @@ public class LoadSceneToMain : MonoBehaviour
     public XRGrabInteractable targetObject; // Het specifieke object dat moet worden gegrabt
     private XRGrabInteractable grabInteractable;
 
+    public RoomCompletionStatus roomStatus; // Reference to the ScriptableObject
+    public int roomNumber; // The room number this script is responsible for (1, 2, 3, or 4)
+
     private void Awake()
     {
         // Zorg ervoor dat er een XRGrabInteractable-component op dit object staat
@@ -45,7 +48,31 @@ public class LoadSceneToMain : MonoBehaviour
 
     private void OnObjectGrabbed(SelectEnterEventArgs args)
     {
+        MarkRoomAsCompleted();
         ChangeScene(sceneName);
+    }
+
+    private void MarkRoomAsCompleted()
+    {
+        if (roomStatus == null)
+        {
+            Debug.LogError("RoomCompletionStatus ScriptableObject is not assigned!");
+            return;
+        }
+
+        // Update the completion status based on the room number
+        switch (roomNumber)
+        {
+            case 1: roomStatus.room1Completed = true; break;
+            case 2: roomStatus.room2Completed = true; break;
+            case 3: roomStatus.room3Completed = true; break;
+            case 4: roomStatus.room4Completed = true; break;
+            default:
+                Debug.LogError("Invalid room number! Must be between 1 and 4.");
+                break;
+        }
+
+        Debug.Log($"Room {roomNumber} marked as completed.");
     }
 
     private void ChangeScene(string sceneName)
