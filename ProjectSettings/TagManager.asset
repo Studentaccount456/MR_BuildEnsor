@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Anchor
+  - Scene2Camera
   layers:
   - Default
   - TransparentFX
