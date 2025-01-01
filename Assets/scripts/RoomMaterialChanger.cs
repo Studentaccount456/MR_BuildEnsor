@@ -15,8 +15,7 @@ public class RoomMaterialChanger : MonoBehaviour
 
     public void UpdateMaterial()
     {
-        bool[] completionStatus = new bool[]
-        {
+        bool[] completionStatus = {
             roomStatus.room1Completed,
             roomStatus.room2Completed,
             roomStatus.room3Completed,

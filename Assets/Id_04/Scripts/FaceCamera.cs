@@ -1,13 +1,15 @@
 using UnityEngine;
 
-public class FaceCamera : MonoBehaviour
+namespace Id_04.Scripts
 {
-    public Transform cameraTransform;
-
-    void Update()
+    public class FaceCamera : MonoBehaviour
     {
-        if (cameraTransform != null)
+        public Transform cameraTransform;
+
+        void Update()
         {
+            if (!cameraTransform) return;
+            
             // Calculate direction to the camera
             Vector3 directionToCamera = cameraTransform.position - transform.position;
 
@@ -21,11 +23,11 @@ public class FaceCamera : MonoBehaviour
             Quaternion targetRotation = Quaternion.LookRotation(directionToCamera);
 
             // Apply an offset rotation (Model offset)
-            Quaternion offsetRotation = Quaternion.Euler(0, -35, 0); // Example: 10 degrees around the Y-axis
+            Quaternion offsetRotation = Quaternion.Euler(0, -35, 0);
 
             // Combine the base rotation with the offset
             transform.rotation = targetRotation * offsetRotation;
-        }
 
+        }
     }
 }
