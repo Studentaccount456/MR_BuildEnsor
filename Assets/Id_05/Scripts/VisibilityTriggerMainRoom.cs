@@ -1,63 +1,90 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ToggleVisibilityOnRoomStatus : MonoBehaviour
+namespace Id_05.Scripts
 {
-    [Tooltip("Objects to toggle visibility when Room 1 is completed.")]
-    public List<GameObject> room1Objects = new List<GameObject>(); // Visible if not completed
-    public List<GameObject> room1ObjectsInitiallyInvisible = new List<GameObject>(); // Start invisible, visible if not completed
-
-    [Tooltip("Objects to toggle visibility when Room 2 is completed.")]
-    public List<GameObject> room2Objects = new List<GameObject>(); // Visible if not completed
-    public List<GameObject> room2ObjectsInitiallyInvisible = new List<GameObject>(); // Start invisible, visible if not completed
-
-    [Tooltip("Objects to toggle visibility when Room 3 is completed.")]
-    public List<GameObject> room3Objects = new List<GameObject>(); // Visible if not completed
-    public List<GameObject> room3ObjectsInitiallyInvisible = new List<GameObject>(); // Start invisible, visible if not completed
-
-    [Tooltip("Objects to toggle visibility when Room 4 is completed.")]
-    public List<GameObject> room4Objects = new List<GameObject>(); // Visible if not completed
-    public List<GameObject> room4ObjectsInitiallyInvisible = new List<GameObject>(); // Start invisible, visible if not completed
-
-    public RoomCompletionStatus roomStatus; // Reference to your RoomCompletionStatus ScriptableObject
-
-    private void Start()
+    public class ToggleVisibilityOnRoomStatus : MonoBehaviour
     {
-        // Ensure visibility is set based on the room completion status at the start
-        SetVisibilityBasedOnRoomStatus();
-    }
+        // First list has the items that are visible when the room is not completed, and disappear on completion
+        // Second list has the items that start invisible and appear on completion
+        [Tooltip("Objects to toggle visibility when Room 1 is completed.")]
+        public List<GameObject> room1Objects = new();
+        public List<GameObject> room1ObjectsInitiallyInvisible = new();
 
-    private void SetVisibilityBasedOnRoomStatus()
-    {
-        // If the RoomCompletionStatus is null, return early
-        if (roomStatus == null)
+        [Tooltip("Objects to toggle visibility when Room 2 is completed.")]
+        public List<GameObject> room2Objects = new();
+        public List<GameObject> room2ObjectsInitiallyInvisible = new();
+
+        [Tooltip("Objects to toggle visibility when Room 3 is completed.")]
+        public List<GameObject> room3Objects = new();
+        public List<GameObject> room3ObjectsInitiallyInvisible = new();
+
+        [Tooltip("Objects to toggle visibility when Room 4 is completed.")]
+        public List<GameObject> room4Objects = new();
+        public List<GameObject> room4ObjectsInitiallyInvisible = new();
+
+        [Tooltip("Objects to toggle townfolk which only can appear after clearance of room 1 and 4.")]
+        public List<GameObject> townfolkObjectsInitiallyInvisible = new();
+
+        // Reference to RoomCompletionStatus ScriptableObject
+        public RoomCompletionStatus roomStatus;
+
+        private void Start()
         {
-            Debug.LogError("RoomCompletionStatus is not assigned!");
-            return;
+            SetVisibilityBasedOnRoomStatus();
         }
 
-        // Set visibility based on room completion status
-        // Objects that start visible
-        SetObjectVisibility(!roomStatus.room1Completed, room1Objects); // Visible if not completed
-        SetObjectVisibility(!roomStatus.room2Completed, room2Objects); // Visible if not completed
-        SetObjectVisibility(!roomStatus.room3Completed, room3Objects); // Visible if not completed
-        SetObjectVisibility(!roomStatus.room4Completed, room4Objects); // Visible if not completed
-
-        // Objects that start invisible
-        SetObjectVisibility(roomStatus.room1Completed, room1ObjectsInitiallyInvisible); // Visible if not completed
-        SetObjectVisibility(roomStatus.room2Completed, room2ObjectsInitiallyInvisible); // Visible if not completed
-        SetObjectVisibility(roomStatus.room3Completed, room3ObjectsInitiallyInvisible); // Visible if not completed
-        SetObjectVisibility(roomStatus.room4Completed, room4ObjectsInitiallyInvisible); // Visible if not completed
-    }
-
-    private void SetObjectVisibility(bool shouldBeVisible, List<GameObject> objectsToToggle)
-    {
-        // Iterate through each object in the list and set its active state
-        foreach (GameObject obj in objectsToToggle)
+        private void SetVisibilityBasedOnRoomStatus()
         {
-            if (obj != null)
+            // If the RoomCompletionStatus is null, return early
+            if (roomStatus == null)
             {
-                obj.SetActive(shouldBeVisible); // Set to visible if true, invisible if false
+                return;
+            }
+
+            // Objects that start visible
+            SetObjectVisibility(!roomStatus.room1Completed, room1Objects);
+            SetObjectVisibility(!roomStatus.room2Completed, room2Objects);
+            SetObjectVisibility(!roomStatus.room3Completed, room3Objects);
+            SetObjectVisibility(!roomStatus.room4Completed, room4Objects);
+
+            // Objects that start invisible
+            SetObjectVisibility(roomStatus.room1Completed, room1ObjectsInitiallyInvisible);
+            SetObjectVisibility(roomStatus.room2Completed, room2ObjectsInitiallyInvisible);
+            SetObjectVisibility(roomStatus.room3Completed, room3ObjectsInitiallyInvisible);
+            SetObjectVisibility(roomStatus.room4Completed, room4ObjectsInitiallyInvisible);
+            
+            SetObjectVisibilitySpecial(roomStatus.room1Completed, roomStatus.room4Completed,
+                townfolkObjectsInitiallyInvisible);
+        }
+
+        private void SetObjectVisibility(bool shouldBeVisible, List<GameObject> objectsToToggle)
+        {
+            foreach (GameObject obj in objectsToToggle)
+            {
+                if (obj != null)
+                {
+                    // Set to visible if true, invisible if false
+                    obj.SetActive(shouldBeVisible);
+                }
+            }
+        }
+
+        private void SetObjectVisibilitySpecial(bool room1Cleared, bool shouldBeVisible,
+            List<GameObject> objectsToToggle)
+        {
+            if (!room1Cleared)
+            {
+                return;
+            }
+
+            foreach (GameObject obj in objectsToToggle)
+            {
+                if (obj != null)
+                {
+                    // Set to visible if true, invisible if false
+                    obj.SetActive(shouldBeVisible);
+                }
             }
         }
     }
