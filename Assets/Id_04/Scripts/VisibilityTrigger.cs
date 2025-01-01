@@ -47,6 +47,9 @@ namespace Id_04.Scripts
                 bool isActive = obj.activeSelf;
                 obj.SetActive(!isActive);
             }
+            
+            // Only trigger once
+            Destroy(this);
         }
     }
 }
