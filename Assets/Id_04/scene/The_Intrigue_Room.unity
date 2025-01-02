@@ -1815,8 +1815,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.051158, y: 4.9687486, z: 11.962554}
-  m_Center: {x: -1.1853578, y: 4.515617, z: -0.0256391}
+  m_Size: {x: 10.051158, y: 6.9921737, z: 11.962554}
+  m_Center: {x: -1.1853578, y: 3.5038981, z: -0.0256391}
 --- !u!199 &255145432
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -6637,11 +6637,12 @@ MonoBehaviour:
   - {fileID: 1581289538}
   - {fileID: 862368848}
   - {fileID: 2131683145}
-  - {fileID: 695555476}
+  - {fileID: 479011245}
   - {fileID: 1757475706}
   - {fileID: 1555188803}
   - {fileID: 1352306670}
   - {fileID: 537561094}
+  - {fileID: 695555476}
 --- !u!1001 &257797427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7824,6 +7825,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -160.73
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f654add2fbef5fa4298265f05e5ef87c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8f03d96ada9ed8c4c8b135f28673950b, type: 2}
     - target: {fileID: 919132149155446097, guid: f654add2fbef5fa4298265f05e5ef87c, type: 3}
       propertyPath: m_Name
       value: Happy_Mask_4
@@ -8548,6 +8553,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -181.058
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f654add2fbef5fa4298265f05e5ef87c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c714aaf24c455804c91364c9474fff2b, type: 2}
     - target: {fileID: 919132149155446097, guid: f654add2fbef5fa4298265f05e5ef87c, type: 3}
       propertyPath: m_Name
       value: Happy_Mask_2
@@ -8854,7 +8863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &479011248
 Transform:
   m_ObjectHideFlags: 0
@@ -19855,7 +19864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d9162ff6794d404ab6271bb1ce1e53e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.313
+      value: -0.319
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1d9162ff6794d404ab6271bb1ce1e53e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21525,6 +21534,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -181.058
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f654add2fbef5fa4298265f05e5ef87c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 16ebfc4d54146f846b5ca96b09f0891d, type: 2}
     - target: {fileID: 919132149155446097, guid: f654add2fbef5fa4298265f05e5ef87c, type: 3}
       propertyPath: m_Name
       value: Happy_Mask
@@ -24691,6 +24704,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -181.058
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f654add2fbef5fa4298265f05e5ef87c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 716af77f52f02484aa223f7f604d4aad, type: 2}
     - target: {fileID: 919132149155446097, guid: f654add2fbef5fa4298265f05e5ef87c, type: 3}
       propertyPath: m_Name
       value: Happy_Mask_3
