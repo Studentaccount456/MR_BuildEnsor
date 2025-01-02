@@ -1296,6 +1296,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6601154472251239395, guid: 3ff286c944256c8479fc6a4fb7e05fab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.407
+      objectReference: {fileID: 0}
     - target: {fileID: -2621939589234068033, guid: 3ff286c944256c8479fc6a4fb7e05fab, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -3004,7 +3008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &625259561
 Transform:
   m_ObjectHideFlags: 0
@@ -8203,8 +8207,8 @@ PrefabInstance:
         still awaits its transformation.\r\n\r\nWe invite you to design this final
         room, drawing inspiration from the four completed rooms, to which you\u2019ll
         have exclusive access. We hope they spark your creativity and help you bring
-        this masterpiece to life.\r\n\r\nTo get started, please pick put on one of
-        the masks at a door. Let the artistry unfold!\r\n"
+        this masterpiece to life.\r\n\r\nTo get started, please put on one of the
+        masks at a door. Let the artistry unfold!\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 6836433888268042386, guid: 748329fcbe1008e4cb31370b7a9858bf, type: 3}
       propertyPath: m_Mass
@@ -11372,7 +11376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1601330401
 Transform:
   m_ObjectHideFlags: 0

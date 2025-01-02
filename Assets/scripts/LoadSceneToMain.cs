@@ -61,9 +61,17 @@ public class LoadSceneToMain : MonoBehaviour
 
     private void ChangeScene(string nameOfScene)
     {
-        if (!string.IsNullOrEmpty(nameOfScene))
+        if (roomStatus.room1Completed && roomStatus.room2Completed && roomStatus.room3Completed &&
+            roomStatus.room4Completed)
         {
-            SceneManager.LoadScene(nameOfScene);
+            SceneManager.LoadScene("Ending Scene");
+        }
+        else
+        {
+            if (!string.IsNullOrEmpty(nameOfScene))
+            {
+                SceneManager.LoadScene(nameOfScene);
+            }
         }
     }
 }
