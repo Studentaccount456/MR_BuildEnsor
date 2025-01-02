@@ -3080,7 +3080,7 @@ MonoBehaviour:
   - maskObject: {fileID: 783529555}
     sceneName: ManOfSorrows
   playerHead: {fileID: 724547750}
-  activationDistance: 0.2
+  activationDistance: 0.35
 --- !u!1001 &642125169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3780,8 +3780,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0151863145, y: 0.020030687, z: 0.013487036}
-  m_Center: {x: -0.000084904816, y: 0.0000033797742, z: 0.00000863127}
+  m_Size: {x: 0.0151863145, y: 0.020030687, z: 0.011133824}
+  m_Center: {x: -0.00008490458, y: 0.00000337957, z: 0.0011852386}
 --- !u!114 &783529557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4771,15 +4771,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.264
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalRotation.w
