@@ -4771,7 +4771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.68
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4779,7 +4779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.7
+      value: -0.88
       objectReference: {fileID: 0}
     - target: {fileID: 8298045291338814965, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7824,7 +7824,7 @@ Transform:
   m_GameObject: {fileID: 1241265980}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.3074188, z: -0, w: 0.9515744}
-  m_LocalPosition: {x: -16.315466, y: 25.261047, z: -2.0559144}
+  m_LocalPosition: {x: -16.89, y: 25.261047, z: -2.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8193,6 +8193,19 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a7b8c091b301c3e43ae71a1eb1759396, type: 2}
+    - target: {fileID: 6791233561727337306, guid: 748329fcbe1008e4cb31370b7a9858bf, type: 3}
+      propertyPath: m_text
+      value: "Dear Constructor,\r\n\r\nWe at the Alternative James Ensor Exhibition
+        Gallery need your expertise! As we prepare for the unveiling of our 75th
+        Anniversary Ensor Collection, our previous constructor, unfortunately, fell
+        ill, leaving the project unfinished. While four rooms have been completed,
+        the most important space \u2014dedicated to Christ\u2019s Entry into Brussels\u2014
+        still awaits its transformation.\r\n\r\nWe invite you to design this final
+        room, drawing inspiration from the four completed rooms, to which you\u2019ll
+        have exclusive access. We hope they spark your creativity and help you bring
+        this masterpiece to life.\r\n\r\nTo get started, please pick put on one of
+        the masks at a door. Let the artistry unfold!\r\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 6836433888268042386, guid: 748329fcbe1008e4cb31370b7a9858bf, type: 3}
       propertyPath: m_Mass
       value: 5
@@ -12706,7 +12719,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.169466
+      value: -16.43
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12714,7 +12727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.4839143
+      value: -2.38
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_LocalRotation.w
