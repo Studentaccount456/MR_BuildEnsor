@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Id_05
+namespace Id_05.Scripts
 {
     public class LoadScene : MonoBehaviour
     {
