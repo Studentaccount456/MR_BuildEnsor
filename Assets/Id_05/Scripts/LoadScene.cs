@@ -16,7 +16,7 @@ namespace Id_05.Scripts
         public MaskScenePair[] maskScenePairs;
 
         public Transform playerHead;
-        public float activationDistance = 0.5f;
+        public float activationDistance = 0.35f;
 
         private void Update()
         {
